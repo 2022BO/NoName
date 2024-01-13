@@ -10,7 +10,7 @@ import ErrorBoundary from './pages/ErrorBoundry';
 import AddCourse from './pages/AddCourse';
 import { CourseDetail } from './components/CourseDetail';
 import { ToastProvider } from './pages/ToastContext';
-import { useNavigate } from 'react-router-dom';
+
 
 const theme = extendTheme({
   config: {
