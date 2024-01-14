@@ -56,7 +56,7 @@ const CoursesPage = ({}) => {
   }, [data]);
 
   useEffect(() => {
-    fetch('/db.json')
+    fetch('https://my-json-server.typicode.com/2022BO/NoName/db')
       .then((response) => response.json())
       .then((jsonData) => {
         console.log('Received data:', jsonData);
