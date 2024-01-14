@@ -1,12 +1,14 @@
 import React from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-export const Navigation = () => {
+
+export const Navigation = ({ courseId}) => {
   const navStyle = {
     display: 'flex',
     justifyContent: 'space-around',
-    background: 'linear-gradient(to left, #3498db, #2ecc71)', 
+    background: 'linear-gradient(to left, #3498db, #2ecc71)',
     padding: '10px',
+    borderRadius: '3px',
   };
 
   const linkStyle = {
@@ -14,25 +16,16 @@ export const Navigation = () => {
     textDecoration: 'none',
   };
 
-  const buttonStyle = {
-    border: 'none',
-    background: 'none',
-    cursor: 'pointer',
-    color: 'green',
-    textDecoration: 'none',
-    fontSize: 20,
-    fontWeight: 'bold',
-  };
-
-  const navigate = useNavigate();
-
   return (
     <nav style={navStyle}>
-      <Link to="/" style={linkStyle}>
+      <Link to="/" style={{ ...linkStyle,}}>
         Cursuscatalogus
       </Link>
-      <Link to="/event/:eventId" style={{ ...linkStyle, marginLeft: '20px' }}>
-        Cursus toevoegen
+<Link to={`/course/${courseId || 'fallbackId'}`} style={{ ...linkStyle, marginLeft: '20px' }}>
+  Cursus Aanmelden
+</Link>
+      <Link to="/information-and-contact" style={{ ...linkStyle, marginLeft: '20px' }}>
+      Informatie & contact
       </Link>
     </nav>
   );
