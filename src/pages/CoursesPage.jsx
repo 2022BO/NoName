@@ -40,7 +40,7 @@ const CoursesPage = () => {
   }, [selectedCourse]);
 
   useEffect(() => {
-    fetch('/events.json')
+    fetch('/db.json')
       .then((response) => response.json())
       .then((jsonData) => {
         console.log('Received data:', jsonData);
@@ -116,7 +116,7 @@ const CoursesPage = () => {
       return;
     }
     try {
-      const response = await fetch(`http://localhost:3000/courses/${courseId}`, {
+      const response = await fetch(`http://localhost:3000`, {
         method: 'DELETE',
       });
 
