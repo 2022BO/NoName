@@ -24,6 +24,8 @@ export const CourseDetail = () => {
 
         if (response.ok) {
           const course = await response.json();
+          console.log('Course Data:', course);
+
           if (!ignore) {
             setCourse(course);
             setIsLoading(false);
