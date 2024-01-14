@@ -20,7 +20,7 @@ export const CourseDetail = () => {
 
     async function fetchData() {
       try {
-        const response = await fetch(`http://localhost:3000/courses/${courseId}`);
+        const response = await fetch(`https://my-json-server.typicode.com/2022BO/NoName/courses/${courseId}`);
 
         if (response.ok) {
           const course = await response.json();
