@@ -46,8 +46,8 @@ const AddCourse = ({ handleUpdateCourses }) => {
       let newCourse;
 
       if (typeof handleUpdateCourses === 'function') {// Haal gegevens op van de server
-        const response = await fetch(`http://localhost:3000/courses`, {
-          method: 'POST',
+        const response = await fetch('https://my-json-server.typicode.com/2022BO/NoName/courses', {
+  method: 'POST',
           headers: {
             'Content-Type': 'application/json',
           },
