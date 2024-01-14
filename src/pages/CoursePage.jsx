@@ -26,7 +26,8 @@ export const CoursePage = () => {
         setIsLoading(true);
 
         try {
-          const response = await fetch(`/api/courses/${selectedCourse.id}`);
+          const response = await fetch(`https://my-json-server.typicode.com/2022BO/NoName/courses/${selectedCourse.id}`);
+
           if (response.ok) {
             const course = await response.json();
             setEditedData(course);
@@ -55,7 +56,7 @@ export const CoursePage = () => {
     console.log('Trying to save changes for course:', editedData);
 
     try {
-      const response = await fetch(`/api/courses/${editedData.id}`, {
+      const response = await fetch(`https://my-json-server.typicode.com/2022BO/NoName/courses/${editedData.id}`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
