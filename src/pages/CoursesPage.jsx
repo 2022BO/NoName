@@ -137,7 +137,7 @@ const CoursesPage = ({}) => {
     }
   
     try {
-      const response = await fetch(`http://localhost:3000/courses/${courseId}`, {
+      const response = await fetch(`https://my-json-server.typicode.com/2022BO/NoName/courses/${courseId}`, {
         method: 'DELETE',
       });
   
