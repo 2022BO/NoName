@@ -44,6 +44,7 @@ const styles = {
   },
 
   image: {
+    loading:"lazy",
     borderRadius: '8px',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     border: '2px solid #527853',
@@ -54,6 +55,7 @@ const styles = {
   },
 
   imageInstrutor: {
+    loading: "lazy",
     borderRadius: '50%',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
     border: '2px solid #527853',

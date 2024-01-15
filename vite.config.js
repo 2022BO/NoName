@@ -12,6 +12,15 @@ export default defineConfig({
   build: {
     target: 'esnext',
     chunkSizeWarningLimit: 1000, 
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          'vendor': ['react', 'react-dom', 'other-lib'],
+        },
+      },
+    },
+  
+
   },
   esbuild: {
     jsxFactory: 'h',

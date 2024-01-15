@@ -126,7 +126,8 @@ const AddCourse = ({ handleUpdateCourses }) => {
   </CardHeader>
   <Box mb="1" style={{ display: 'flex', justifyContent: 'center' }}>
     <Image
-      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITBUgze1LUFdU2yYAkcZ5C0td8NpWLEm9TvVHYfptuXPOzPt8nbik1E1fS-d-B2EmYSY&usqp=CAU"
+    loading="lazy"
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRITBUgze1LUFdU2yYAkcZ5C0td8NpWLEm9TvVHYfptuXPOzPt8nbik1E1fS-d-B2EmYSY&usqp=CAU&nf_resize=fit&w=300&h=400"
       alt="krijttekening in een les"
       style={styles.imageStyle}
     />

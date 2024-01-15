@@ -98,7 +98,7 @@ export const CoursePage = () => {
                 <Text>Categorieën: {editedData.categories?.join(', ')}</Text>
                 <Text>Docent: {editedData.instructor?.name}</Text>
                 {editedData.instructor?.image && (
-                  <Image src={editedData.instructor?.image} alt={editedData.instructor?.name} style={styles.image} />
+                  <Image  loading="lazy" src={editedData.instructor?.image} alt={editedData.instructor?.name} style={styles.image} />
                 )}
               </Box>
               <Box style={{ ...styles.box, display: 'flex', justifyContent: 'space-between' }}>

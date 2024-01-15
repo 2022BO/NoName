@@ -23,7 +23,16 @@ const InformationAndContactPage = () => {
           <HStack spacing="4" mb="4" justifyContent="center" flexWrap={{ base: 'wrap', md: 'nowrap' }}>
   <Box w={{ base: '20%', md: '30%' }} mb="4">
     <Image
-      src="https://s3-storage.textopus.nl/wp-content/uploads/2015/01/18070912/shutterstock_129031994.jpg"
+      loading="lazy"
+      srcSet="
+      image-320w.jpg 320w,
+      image-480w.jpg 480w,
+      image-800w.jpg 800w"
+    sizes="
+      (max-width: 320px) 280px,
+      (max-width: 480px) 440px,
+      800px"
+      src="https://s3-storage.textopus.nl/wp-content/uploads/2015/01/18070912/shutterstock_129031994.jpg?nf_resize=fit&w=300&h=400"
       alt="lachende vrouw op het strand, Yoga"
       style={{
         width: '100%',
@@ -38,7 +47,16 @@ const InformationAndContactPage = () => {
   </Box>
   <Box w={{ base: '20%', md: '30%' }} mb="4">
     <Image
-      src="https://www.medischcontact.nl/upload/ca371a92-e403-411c-a345-b9b9c7a3b513_image9156973333157885166.jpg"
+    loading="lazy"
+    srcSet="
+    image-320w.jpg 320w,
+    image-480w.jpg 480w,
+    image-800w.jpg 800w"
+  sizes="
+    (max-width: 320px) 280px,
+    (max-width: 480px) 440px,
+    800px"
+      src="https://www.medischcontact.nl/upload/ca371a92-e403-411c-a345-b9b9c7a3b513_image9156973333157885166.jpg?nf_resize=fit&w=300&h=400"
       alt="Collage met mensen"
       style={{
         width: '100%',
@@ -52,7 +70,16 @@ const InformationAndContactPage = () => {
   </Box>
   <Box w={{ base: '20%', md: '30%' }} mb="4">
     <Image
-      src="https://www.medilex.nl/site/images/cache/401/301/Congresses-3135-attachment1_Plaatjewebsite.jpg"
+    loading="lazy"
+    srcSet="
+    image-320w.jpg 320w,
+    image-480w.jpg 480w,
+    image-800w.jpg 800w"
+  sizes="
+    (max-width: 320px) 280px,
+    (max-width: 480px) 440px,
+    800px"
+      src="https://www.medilex.nl/site/images/cache/401/301/Congresses-3135-attachment1_Plaatjewebsite.jpg?nf_resize=fit&w=300&h=400"
       alt="blond kind met syndroom van down"
       style={{
         width: '100%',

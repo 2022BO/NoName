@@ -231,7 +231,7 @@ const CoursesPage = ({}) => {
 {filteredCoursesByCategory.map((course) => (
  <React.Fragment key={course.id}>
   <Box borderWidth="1px" borderRadius="lg" overflow="hidden" position="relative" padding={3} mt={2} width={{ base: '100%', md: '30%' }} mx={{ base: 0, md: 3 }}>
-    <img src={course.image} alt={course.title} style={styles.image} />
+    <img loading="lazy" src={course.image} alt={course.title} style={styles.image} />
 
     <Box>
       <Text as="h3" fontSize="lg" fontWeight="bold" color="blue.500" mb={2}>
@@ -260,6 +260,7 @@ const CoursesPage = ({}) => {
   <Text>
     {course.instructor?.image && (
       <Image
+      loading="lazy"
         boxSize="50px"
         src={course.instructor?.image}
         alt={course.instructor?.name}

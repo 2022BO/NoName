@@ -80,7 +80,7 @@ export const CourseDetail = () => {
               <strong>Categorieën:</strong> {categoriesContent}
             </Text>
           </Box>
-          <Image src={image} alt={title} style={{ ...styles.image, marginBottom: '10px' }} />
+          <Image loading="lazy" src={image} alt={title} style={{ ...styles.image, marginBottom: '10px' }} />
           <Box>
             <Text>
               <TimeIcon marginRight="5px" />
